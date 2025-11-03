@@ -1,0 +1,91 @@
+
+        body{
+            min-width: 100VW;
+            min-height: 100Vh;
+            background-color: black;
+            
+        }
+        h1{
+            color: white;
+            text-align: center;
+        }
+        form{
+             text-align: center;
+             display: flex;
+             justify-content: center;
+             gap: 5px;
+             margin-bottom: 40px;
+        }
+        img{
+            min-width: 100%;
+            display: black;
+        }
+        .image-continer{
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(220px,.4fr));
+            gap: 10px;
+            margin: 10px auto;
+            place-content: center;
+
+        }
+        input{
+         font-size: 1.4rem;
+         border: none;
+         outline: none;
+         border-radius: 0.1cm;
+        }
+        input:focus-within{
+            box-shadow:  0 0 3px 3px rgb(30, 156, 129);
+        }
+        button {
+            font-size: 1.2 rem;
+            padding: .25em .73em;
+            border: none;
+            background-color: rgb(55, 136, 136) ;
+            color: white;
+            font-weight: bold;
+            box-shadow: 3px 2px 5px 0px rgb(75, 59, 59);
+            border-radius: 3px;
+        }
+        /* In style.css */
+
+        button:active{
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 7px 0px regb(105, 104, 104);
+
+        }
+        button:hover{
+            cursor: pointer;
+
+        }
+        
+        .status-message {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+   
+}
+/* Example missing styles for a clean UI */
+
+.movie-item {
+    background-color: #222; /* Dark background for card */
+    border-radius: 8px;
+    overflow: hidden; /* Important to keep image contained */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative; /* Needed for positioning movie-info */
+    transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+    transform: translateY(-5px);
+}
+
+.movie-info {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
